@@ -1,14 +1,13 @@
-# Patch-Recovery
-This CI service patches recovery images of Samsung to enable Fastbootd. Based on Phh's [script](https://github.com/phhusson/samsung-galaxy-a51-gsi-boot)
+# Fastbootd recovery for "sm-a23xq" (Samsung Galaxy A23 5G)
 
-# How to use:
-- Fork this repo.
-- Upload your recovery.img/recovery.img.lz4 to [transfer.sh](https://transfer.sh/) or any other file hosting sites. Once uploaded right click on the Download button and copy the URL. Avoid Gdrive links for now as it has been causing an error in some cases. 
-- Head over to Actions tab. Click on RECOVERY -> Run workflow. Insert the copied URL in the RECOVERY URL field and Start the workflow
-- The Patching process will start
-- A Patched-Recovery.zip will be uploaded at the end of the process. Download it and extract your patched recovery image. The Image will already also be repacked to .tar for flashing directly through Odin
-![](https://s3.bmp.ovh/imgs/2022/04/19/91ef3a3ee9255e9c.png)
+## Info
 
-# Credits
-- [Phhusson](https://github.com/phhusson) Without his script nothing would be possible at the first place
-- [James Nguyen](https://github.com/thongass000) Helping me in simplifying the scripts and tweaking it
+This is a patch to the phone's stock recovery that allows it to boot into fastbootd mode (fastboot commands work in fastbootd)
+Used a recovery-patcher (which this project is forked from)
+[Download the recovery from the latest release](https://github.com/octo-org/octo-repo/releases/latest)
+
+## Disclaimer
+
+Use this image at your own risk.
+I am not responsible from any damages to your device resulting from the use of this image.
+Flashing this image may void your warranty.
